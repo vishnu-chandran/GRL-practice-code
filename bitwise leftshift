@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int a = 40;
+int b = 0;
+printf("\n Enter number of positions for the bits to shift to the left : ");
+// accepting the value of second operand from the user
+scanf("%d", &b);
+printf("The result of left shift operation is : ");
+// Binary value of 40 is 101000
+printf("\n %d << %d = %d", a, b, a<<b);
+}
