@@ -1,0 +1,22 @@
+#reading to json:
+import json
+
+with open('path_to_file/person.json', 'r') as f:
+  data = json.load(f)
+
+# Output: {'name': 'Bob', 'languages': ['English', 'French']}
+print(data)
+
+
+#writing to json:
+
+import json
+
+person_dict = {"name": "Bob",
+"languages": ["English", "French"],
+"married": True,
+"age": 32
+}
+
+with open('person.txt', 'w') as json_file:
+  json.dump(person_dict, json_file)
